@@ -1,9 +1,9 @@
 import kotlin.random.Random
 
-enum class Ammo (
+enum class Ammo(
     private val damage: Int,
     private val criticalDamageChance: Int,
-    private val ratioCriticalDamage: Int
+    private val ratioCriticalDamage: Int,
 ) {
     SIMPLE_BULLET(3, 5, 2),
     BIG_BULLET(5, 10, 3),

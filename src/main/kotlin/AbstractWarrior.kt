@@ -1,4 +1,4 @@
-abstract class AbstractWarrior (
+abstract class AbstractWarrior(
     maxHealth: Int,
     override val chanceToDodge: Int,
     val accuracy: Int,
@@ -8,7 +8,7 @@ abstract class AbstractWarrior (
     override fun toAttack(warrior: Warrior) {
         if (!weapon.isArmed) {
             weapon.reload()
-        }else {
+        } else {
             weapon.getAmmoToShoot()
         }
     }

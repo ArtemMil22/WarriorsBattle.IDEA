@@ -8,7 +8,3 @@ sealed class BattleState {
 
     object Draw : BattleState()
 }
-//  class Progress(val team1Health: Int, val team2Health: Int) : BattleState()
-//    object Team1Won : BattleState()
-//    object Team2Won : BattleState()
-//    object Draw : BattleState()

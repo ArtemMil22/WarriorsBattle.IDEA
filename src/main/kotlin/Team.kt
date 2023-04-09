@@ -19,33 +19,25 @@ class Team(countMembers: Int) {
         return teamList
     }
 }
-
 //(numberOfWarriors: Int) {
-//
 //    val warriors = mutableListOf<Warrior>()
-//
 //    init {
 //        for (i in 1..numberOfWarriors) {
 //            warriors.add(createWarrior())
 //        }
 //    }
-//
 //    private fun createWarrior(): Warrior {
 //        val rank = Random.nextInt(1, 11)
 //        return Warrior(rank)
 //    }
-//
 //    fun isAlive() = warriors.any { it.isKilled }
-//
 //    fun shuffleWarriors() {
 //        warriors.shuffle()
 //    }
 //    private fun createTeam(countMembers: Int):List<Warrior> {
-//
 //        val seniorWarriors = (countMembers * 0.2).toInt()
 //        val juniorWarriors = (countMembers * 0.5).toInt()
 //        val middleWarriors = (countMembers - (seniorWarriors + juniorWarriors))
-//
 ////        teamList =
 ////            when {
 ////                it < seniorWarriors -> WarriorSenior("Senior Warrior $")
@@ -61,31 +53,9 @@ class Team(countMembers: Int) {
 //        }
 //        return teamList
 //    }
-
-/*
-class Team(private val size: Int) {
-val warriors: List = getDefaultWarriors()
-
-private fun getDefaultWarriors(): List<Warrior> {
-    val warriors = mutableListOf<Warrior>()
-    for (i in 1..size) {
-        warriors.add(
-            if (Random.nextInt(100) < 50) {
-                SeniorWarrior(150, 10, 80, Weapons.machineGun)
-            } else {
-                JuniorWarrior(100, 20, 70, Weapons.pistol)
-            }
-        )
-    }
-    return warriors
-}
- */
-
 /*
 class Team(private val numberOfWarriors: Int) {
-
 val warriors: List<Warrior> = createWarriors(numberOfWarriors)
-
 private fun createWarriors(number: Int): List<Warrior> {
     val list = mutableListOf<Warrior>()
     for (i in 1..number) {
@@ -93,7 +63,6 @@ private fun createWarriors(number: Int): List<Warrior> {
     }
     return list
 }
-
 private fun generateWarrior(): Warrior {
     val rank = (1..10).random()
     return when (rank) {
@@ -104,16 +73,11 @@ private fun generateWarrior(): Warrior {
         else -> Warrior(Rank.PRIVATE)
     }
 }
-
 class Team(private val numOfWarriors: Int) {
 private var warriors: List = listOf()
-
-kotlin
-Copy code
 init {
     setTeam()
 }
-
 private fun setTeam() {
     val seniorWarriors = (numOfWarriors * 0.2).toInt()
     val juniorWarriors = (numOfWarriors * 0.5).toInt()

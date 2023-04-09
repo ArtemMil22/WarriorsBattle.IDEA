@@ -15,8 +15,3 @@ object Weapons {
         }
     }
 }
-//    val automaticRifle = object : AbstractWeapon(30, FireType.RapidFire) {
-//        override fun createAmmo(): Ammo {
-//            return Ammo.BIG_BULLET
-//        }
-//    }
