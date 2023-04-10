@@ -9,9 +9,13 @@ enum class Ammo(
     BIG_BULLET(5, 10, 3),
     SNIPER_BULLET(10, 30, 4);
 
-    fun getCurrentDamage(ammo: Ammo): Int {
-        return if (Random.nextInt(until = 100) <= ammo.criticalDamageChance) {
-            ammo.damage * ammo.ratioCriticalDamage
-        } else ammo.damage
+    fun getCurrentDamage(): Int {
+        return if (Random.nextInt(100) <= criticalDamageChance) {
+            damage * ratioCriticalDamage
+        } else damage
     }
 }
+
+
+
+
